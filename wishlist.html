@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - Anand Jewels</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo.png" alt="Anand Jewels Logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="collections.html" class="nav__link">Collections</a></li>
+                    <li class="nav__item"><a href="gifting.html" class="nav__link">Gifting</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="store-locator.html" class="nav__link">Stores</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="gallery.html" class="nav__link ">Gallery</a></li> 
+                </ul>
+                <div class="nav__close" id="nav-close">×</div>
+            </div>
+
+            <div class="nav__actions">
+
+                <div class="nav__theme-toggle" id="theme-toggle">
+                    <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 3a9 9 0 0 0 9 9c0 .46-.04.92-.1 1.36c-.49 4.08-3.9 7.14-7.9 7.14c-4.42 0-8-3.58-8-8c0-3.99 2.93-7.31 6.86-7.88A8.995 8.995 0 0 0 12 3zm-1 9a1 1 0 0 1 1-1v-1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1-1V6a1 1 0 0 1-1 1h-1a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-1z" />
+                    </svg>
+                    <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 8a5 5 0 1 1 0-10a5 5 0 0 1 0 10zm0-17a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1zm-9 9a1 1 0 0 1-1-1H0a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1-1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zM5.636 5.636a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 0 1-1.414 1.414L5.636 7.05a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 0 1-1.414 1.414l-1.414-1.414a1 1 0 0 1 0-1.414zM12 19a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zm-6.364 1.414a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414L5.636 19.828a1 1 0 0 1-1.414 0zm12.728 0a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414l-1.414 1.414a1 1 0 0 1-1.414 0z" />
+                    </svg>
+                </div>
+
+                <div class="nav__search" id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6z" />
+                    </svg>
+                </div>
+
+                <div class="nav__wishlist" id="wishlist-btn">
+                    <a href="wishlist.html" aria-label="View Wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35zM7.5 5c-1.93 0-3.5 1.57-3.5 3.5c0 2.89 3.14 5.7 7.95 9.8L12 18.39l.05-.05c4.81-4.1 7.95-6.91 7.95-9.8C20 6.57 18.43 5 16.5 5c-1.74 0-3.41.81-4.5 2.09C10.91 5.81 9.24 5 7.5 5z" />
+                        </svg>
+                        <span class="wishlist-count" id="wishlist-count">0</span>
+                    </a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">☰</div>
+            </div>
+        </nav>
+
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar__form" id="global-search-form">
+                <input type="search" placeholder="Search for products..." class="search-bar__input"
+                    id="global-search-input" required>
+                <button type="submit" class="search-bar__submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6z" />
+                    </svg>
+                </button>
+            </form>
+            <button class="search-bar__close" id="search-close">×</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <h1 class="section__title">My Wishlist</h1>
+            <div class="product-grid" id="wishlist-grid">
+                <p id="wishlist-empty-msg">Your wishlist is empty.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__section">
+                <h3 class="footer__title">Anand Jewels</h3>
+                <p>Crafting timeless pieces of art since 1980. Experience the legacy of trust and exquisite
+                    craftsmanship.</p>
+                <div class="footer__social">
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__list">
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Store Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Shop</h3>
+                <ul class="footer__list">
+                    <li><a href="collections.html?category=rings" class="footer__link">Rings</a></li>
+                    <li><a href="collections.html?category=necklaces" class="footer__link">Necklaces</a></li>
+                    <li><a href="collections.html?category=earrings" class="footer__link">Earrings</a></li>
+                    <li><a href="collections.html?category=bangles" class="footer__link">Bangles</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Newsletter</h3>
+                <p>Subscribe to get updates on new collections and offers.</p>
+                <form class="footer__subscribe">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn btn-primary">&gt;</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Anand Jewels. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>

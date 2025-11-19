@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Anand Jewels</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo.png" alt="Anand Jewels Logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="collections.html" class="nav__link">Collections</a></li>
+                    <li class="nav__item"><a href="gifting.html" class="nav__link">Gifting</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active-link">About Us</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="store-locator.html" class="nav__link">Stores</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="gallery.html" class="nav__link ">Gallery</a></li> 
+                </ul>
+                <div class="nav__close" id="nav-close">×</div>
+            </div>
+
+            <div class="nav__actions">
+                <div class="nav__theme-toggle" id="theme-toggle">
+                    <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 3a9 9 0 0 0 9 9c0 .46-.04.92-.1 1.36c-.49 4.08-3.9 7.14-7.9 7.14c-4.42 0-8-3.58-8-8c0-3.99 2.93-7.31 6.86-7.88A8.995 8.995 0 0 0 12 3zm-1 9a1 1 0 0 1 1-1v-1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1-1V6a1 1 0 0 1-1 1h-1a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-1z" />
+                    </svg>
+                    <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 8a5 5 0 1 1 0-10a5 5 0 0 1 0 10zm0-17a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1zm-9 9a1 1 0 0 1-1-1H0a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1-1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zM5.636 5.636a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 0 1-1.414 1.414L5.636 7.05a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 0 1-1.414 1.414l-1.414-1.414a1 1 0 0 1 0-1.414zM12 19a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zm-6.364 1.414a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414L5.636 19.828a1 1 0 0 1-1.414 0zm12.728 0a1 1 0 0 1 0-1.414l1.414-1.414a1 1 0 1 1 1.414 1.414l-1.414 1.414a1 1 0 0 1-1.414 0z" />
+                    </svg>
+                </div>
+
+                <div class="nav__search" id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6z" />
+                    </svg>
+                </div>
+
+                <div class="nav__wishlist" id="wishlist-btn">
+                    <a href="wishlist.html" aria-label="View Wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35zM7.5 5c-1.93 0-3.5 1.57-3.5 3.5c0 2.89 3.14 5.7 7.95 9.8L12 18.39l.05-.05c4.81-4.1 7.95-6.91 7.95-9.8C20 6.57 18.43 5 16.5 5c-1.74 0-3.41.81-4.5 2.09C10.91 5.81 9.24 5 7.5 5z" />
+                        </svg>
+                        <span class="wishlist-count" id="wishlist-count">0</span>
+                    </a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">☰</div>
+            </div>
+        </nav>
+
+        <div class="search-bar" id="search-bar">
+            <form class="search-bar__form" id="global-search-form">
+                <input type="search" placeholder="Search for products..." class="search-bar__input"
+                    id="global-search-input" required>
+                <button type="submit" class="search-bar__submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6z" />
+                    </svg>
+                </button>
+            </form>
+            <button class="search-bar__close" id="search-close">×</button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="page-hero"
+            style="background-image: url('https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-4.jpg?w=999');">
+            <div class="page-hero__content">
+                <h1>Our Story</h1>
+                <p>Crafting legacies, one jewel at a time.</p>
+            </div>
+        </section>
+
+        <section class="section container text-center anim-fade-in">
+            <h2 class="section__title">Our Mission</h2>
+            <p class="section__subtitle" style="max-width: 800px; margin: 0 auto 2rem auto;">
+                At Anand Jewels, our mission is to craft not just jewellery, but timeless heirlooms that celebrate
+                life's most precious moments. We are dedicated to unparalleled craftsmanship, ethical sourcing, and a
+                legacy of trust that spans generations.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="container timeline-layout">
+                <div class="timeline-item anim-fade-in">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m12 2l-2.09 7.26L2 12l7.26 2.09L12 22l2.09-7.26L22 12l-7.26-2.09L12 2z" />
+                        </svg>
+                    </div>
+                    <h3>Exquisite Craftsmanship</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our master artisans blend traditional
+                        techniques with modern innovation to create pieces of wearable art.</p>
+                </div>
+
+                <div class="timeline-item anim-fade-in">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                        </svg>
+                    </div>
+                    <h3>Ethical Sourcing</h3>
+                    <p>We believe in beauty you can feel good about. All our diamonds are conflict-free and our
+                        materials are sourced with integrity and respect for the planet.</p>
+                </div>
+
+                <div class="timeline-item anim-fade-in">
+                    <div class="timeline-item__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M13 9V3.5L18.5 9M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6z" />
+                        </svg>
+                    </div>
+                    <h3>A Legacy of Trust</h3>
+                    <p>Since 1980, Anand Jewels has been a name synonymous with quality and trust. We are honored to be
+                        a part of
+                        your family's most cherished memories.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section container">
+            <div class="text-center anim-fade-in">
+                <h2 class="section__title">Experience the Ambience</h2>
+                <p class="section__subtitle">A glimpse into our world of quiet luxury.</p>
+            </div>
+
+            <div class="shop-gallery-grid">
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1601121141499-17ae80afc03a?q=80&w=1000&auto=format&fit=crop"
+                        alt="Store Interior Wide">
+                    <div class="shop-card-overlay">
+                        <span>Grand Entrance</span>
+                    </div>
+                </div>
+
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1589810635657-232948472d98?q=80&w=800&auto=format&fit=crop"
+                        alt="Display Counters">
+                    <div class="shop-card-overlay">
+                        <span>The Gold Lounge</span>
+                    </div>
+                </div>
+
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?q=80&w=800&auto=format&fit=crop"
+                        alt="Ceiling Detail">
+                    <div class="shop-card-overlay">
+                        <span>Artistic Ceiling</span>
+                    </div>
+                </div>
+
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=800&auto=format&fit=crop"
+                        alt="VIP Room">
+                    <div class="shop-card-overlay">
+                        <span>The Scarlet VIP Room</span>
+                    </div>
+                </div>
+
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&w=800&auto=format&fit=crop"
+                        alt="Jewellery Display">
+                    <div class="shop-card-overlay">
+                        <span>Diamond Collection</span>
+                    </div>
+                </div>
+
+                <div class="shop-card anim-fade-in">
+                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=800&auto=format&fit=crop"
+                        alt="Waiting Area">
+                    <div class="shop-card-overlay">
+                        <span>Customer Lounge</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section container">
+            <div class="text-center anim-fade-in">
+                <h2 class="section__title">Inside Our World</h2>
+                <p class="section__subtitle">Explore the architectural beauty of our flagship store.</p>
+            </div>
+
+            <div class="shop-gallery-grid">
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-1.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-2.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-3.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-4.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-5.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-6.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-7.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-8.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-9.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-10.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-11.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-12.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-13.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-14.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-15.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                 <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-16.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-17.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-18.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-19.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+                <div class="shop-card anim-fade-in">
+                    <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/11/5229-Anand-Jewels-by-GroupDCA-20.jpg?w=999"
+                        alt="Anand-Jewels">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__section">
+                <h3 class="footer__title">Anand Jewels</h3>
+                <p>Crafting timeless pieces of art since 1980. Experience the legacy of trust and exquisite
+                    craftsmanship.</p>
+                <div class="footer__social">
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__list">
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Store Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Shop</h3>
+                <ul class="footer__list">
+                    <li><a href="collections.html?category=rings" class="footer__link">Rings</a></li>
+                    <li><a href="collections.html?category=necklaces" class="footer__link">Necklaces</a></li>
+                    <li><a href="collections.html?category=earrings" class="footer__link">Earrings</a></li>
+                    <li><a href="collections.html?category=bangles" class="footer__link">Bangles</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Newsletter</h3>
+                <p>Subscribe to get updates on new collections and offers.</p>
+                <form class="footer__subscribe">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn btn-primary">&gt;</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Anand Jewels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
