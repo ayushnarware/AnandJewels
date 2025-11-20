@@ -67,6 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }); // End of DOMContentLoaded
 
+
+    const video = document.getElementById("heroVideo");
+
+    // Try playing video WITHOUT mute
+    video.muted = false;
+    let playPromise = video.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            // Autoplay blocked → mute ON
+            video.muted = true;
+            video.play();
+        });
+    }
+
+
 /**
  * Retrieves the current wishlist from localStorage.
  * @returns {Array<number>} An array of product IDs.
