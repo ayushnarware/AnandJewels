@@ -129,39 +129,82 @@ function toggleWishlist(productId) {
 }
 
 
+// /**
+//  * Initializes the theme toggle functionality.
+//  * Checks localStorage and system preference.
+//  */
+// function initThemeToggle() {
+//     const themeToggleBtn = document.getElementById('theme-toggle');
+//     const darkThemeClass = 'dark-theme';
+    
+//     // Check for saved theme in localStorage
+//     let currentTheme = localStorage.getItem('theme');
+    
+//     // If no theme in localStorage, check system preference
+//     if (!currentTheme) {
+//         currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+//     }
+    
+//     // Apply the theme
+//     if (currentTheme === 'dark') {
+//         document.body.classList.add(darkThemeClass);
+//     }
+
+//     // Add click listener to the toggle button
+//     if (themeToggleBtn) {
+//         themeToggleBtn.addEventListener('click', () => {
+//             // Toggle the class on the body
+//             document.body.classList.toggle(darkThemeClass);
+            
+//             // Update the theme in localStorage
+//             let themeToSave = document.body.classList.contains(darkThemeClass) ? 'dark' : 'light';
+//             localStorage.setItem('theme', themeToSave);
+//         });
+//     }
+// }
+
 /**
  * Initializes the theme toggle functionality.
- * Checks localStorage and system preference.
+ * Default theme = light
  */
 function initThemeToggle() {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const darkThemeClass = 'dark-theme';
-    
-    // Check for saved theme in localStorage
-    let currentTheme = localStorage.getItem('theme');
-    
-    // If no theme in localStorage, check system preference
-    if (!currentTheme) {
-        currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    
-    // Apply the theme
+
+    // Always start with light theme by default
+    let currentTheme = localStorage.getItem('theme') || 'light';
+
+    // Apply theme
     if (currentTheme === 'dark') {
         document.body.classList.add(darkThemeClass);
     }
 
-    // Add click listener to the toggle button
+    // Toggle button click
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
-            // Toggle the class on the body
+
             document.body.classList.toggle(darkThemeClass);
-            
-            // Update the theme in localStorage
-            let themeToSave = document.body.classList.contains(darkThemeClass) ? 'dark' : 'light';
+
+            const themeToSave = document.body.classList.contains(darkThemeClass)
+                ? 'dark'
+                : 'light';
+
             localStorage.setItem('theme', themeToSave);
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // (FIX: This entire function was missing)
 /**
